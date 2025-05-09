@@ -1,0 +1,171 @@
+/* General Themes */
+:root {
+    --theme-color: #ffaddc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header & Navigation */
+header {
+    background-color: lavender;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--theme-color);
+}
+
+/* Sections */
+section {
+    padding: 6rem 5%;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.frontPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding-top: 80px;
+}
+
+.frontPageContent h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.frontPageContent .name {
+    color: var(--theme-color);
+}
+
+.frontPageContent .title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--theme-color);
+}
+
+.colorButton {
+    padding: 1rem 2rem;
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: alias;
+}
+
+.colorButton:hover {
+    background-color: lavender;
+}
+
+/* About Section */
+.about {
+    background-color: lavender;
+}
+
+#Text {
+    line-height: 2.5;
+    text-indent: 3rem;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    color: var(--theme-color)
+}
+
+/* Projects Section */
+.projects {
+    background-color: #f8f9fa;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin: 1rem;
+}
+
+.project-card p {
+    margin: 0 1rem 1rem;
+    color: #666;
+}
+
+.project-links {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.code-link {
+    background-color: var(--theme-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--theme-color);
+    color: white;
+}

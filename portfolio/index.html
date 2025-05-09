@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="frontPage">
+            <div class="frontPageContent">
+                <h1><span class="name">LMSC-261 Portfolio</span></h1>
+                <p class="title">Jane Buza</p>
+                <button class="colorButton" onclick="colorChange()">Swap Color</button>
+            </div>
+        </section>
+
+        <section id = "about" class="about">
+            <h1>Course Summary</h1>
+            <div class="about-content">
+                <div class="bio">
+                    <p id="Text">This semester was jam-packed with content from start to finish. First, we started with terminal, homebrewing Git and VSCode. We then continued to JavaScript to start writing our first lines of code in the class. We then progressed onto HTML and then CSS. Using p5, tone, or other JS databases, we created websites, each with our own creative flare. We then moved onto python to wrap the semester up, utilizing everything we learned throughout the term. Although I alredy knew quite a bit about coding prior to this class, I felt I learned a lot. From little tricks that save so much time, to new ways to use things I knew, I found this class to be very informative and quite fun. I would've never learned about homebrewing, or how amazing GitHub is, or the wonders of Web. All in all, I had a great semester and I cant wait to utlize what I learned in the class in my every day life.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Scratch Project</h3>
+                    <p>I made a simple game in scratch where you have to snatch a ball before a bear gets you.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Berklee-Zilli/scratch-janebuza" target = "_blank" class="code-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>JavaScript Intro</h3>
+                    <p>This series of losely related assignments served as an in-class intro to JavaScript.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Berklee-Zilli/js-day-2-janebuza" target = "_blank" class="code-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>FizzBuzz</h3>
+                    <p>This excercise asks you to print "Fizz" if a number is divisible by 3, "Buzz" if a number is dvisible by 5, and "FizzBuzz" if a number is divisible by both.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Berklee-Zilli/calculator-janebuza" target = "_blank" class="code-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>JavaScript Extra Practice</h3>
+                    <p>These sesries of losely related assignments served as extra in-class JS practice.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Berklee-Zilli/js-extra-practice-janebuza" target = "_blank" class="code-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>HTML Intro</h3>
+                    <p>This fabulous lyric sheet I created for Charli xcx's "360" served as an in-class intro to HTML.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/janebuza/introToWeb" target = "_blank" class="code-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Midterm</h3>
+                    <p>This modern art masterpiece was my midterm project. I created it with HTML, JS, and p5.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Berklee-Zilli/p5-midterm-003-janebuza" target = "_blank" class="code-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Midterm</h3>
+                    <p>This modern art masterpiece was my midterm project. I created it with HTML, JS, and p5.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Berklee-Zilli/p5-midterm-003-janebuza" target = "_blank" class="code-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jane Buza. All rights reserved.</p>
+    </footer>
+
+    <script src = "script.js"></script>
+</body>
+</html>
